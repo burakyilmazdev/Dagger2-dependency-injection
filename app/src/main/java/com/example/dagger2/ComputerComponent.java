@@ -6,4 +6,6 @@ import dagger.Component;
 public interface ComputerComponent {
 
     Computer getComputer();
+
+    void inject(MainActivity mainActivity);
 }

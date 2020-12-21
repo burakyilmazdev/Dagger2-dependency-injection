@@ -6,8 +6,8 @@ import javax.inject.Inject;
 
 public class Computer {
     private static final String TAG = "Computer";
-    RAM ram;
-    Processor processor;
+    private RAM ram;
+    private Processor processor;
 
     @Inject
     public Computer(RAM ram, Processor processor) {
@@ -16,6 +16,6 @@ public class Computer {
     }
 
     public void work(){
-        Log.d(TAG, "Computer is working ");
+        Log.d(TAG, "Computer is working! ");
     }
 }
