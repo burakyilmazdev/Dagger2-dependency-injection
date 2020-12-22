@@ -17,7 +17,7 @@ public class Computer {
     }
 
     public void work(){
-        Log.d(TAG, "Computer is working!!!! ");
+        Log.wtf(TAG, "Computer is working!!!! ");
     }
 
     @Inject

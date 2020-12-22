@@ -13,6 +13,6 @@ public class ComputerAdapter {
     }
 
     public void charger(Computer computer){
-        Log.d(TAG,"charging...");
+        Log.wtf(TAG,"charging...");
     }
 }
