@@ -5,7 +5,7 @@ import dagger.Component;
 @Component
 public interface ComputerComponent {
 
-    Computer getComputer();
+    //Computer getComputer();
 
     void inject(MainActivity mainActivity);
 }
