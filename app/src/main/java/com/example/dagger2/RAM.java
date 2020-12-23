@@ -2,10 +2,7 @@ package com.example.dagger2;
 
 import javax.inject.Inject;
 
-public class RAM {
+public interface RAM {
 
-    @Inject
-    public RAM(){
-
-    }
+    void Brand();
 }

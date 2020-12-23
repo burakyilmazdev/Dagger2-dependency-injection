@@ -17,6 +17,7 @@ public class Computer {
     }
 
     public void work(){
+        ram.Brand();
         Log.wtf(TAG, "Computer is working!!!! ");
     }
 
