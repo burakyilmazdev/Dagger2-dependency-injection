@@ -1,5 +1,9 @@
-package com.example.dagger2;
+package com.example.dagger2.Dagger;
 
+
+import com.example.dagger2.Computer.Capacitor;
+import com.example.dagger2.Computer.Processor;
+import com.example.dagger2.Computer.Transistor;
 
 import dagger.Module;
 import dagger.Provides;
@@ -20,7 +24,7 @@ public class ProcessorModule {
     }
 
     @Provides
-    static Processor provideProcessor(Transistor transistor,Capacitor capacitor){
+    static Processor provideProcessor(Transistor transistor, Capacitor capacitor){
         return new Processor(capacitor,transistor);
     }
 }

@@ -1,4 +1,6 @@
-package com.example.dagger2;
+package com.example.dagger2.Dagger;
+
+import com.example.dagger2.MainActivity;
 
 import dagger.Component;
 

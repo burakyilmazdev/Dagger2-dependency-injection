@@ -1,10 +1,10 @@
-package com.example.dagger2;
+package com.example.dagger2.Computer;
 
 import android.util.Log;
 
 import javax.inject.Inject;
 
-public class KingstonRam implements RAM{
+public class KingstonRam implements RAM {
     private static final String TAG = "KingstonRam";
 
     @Inject
