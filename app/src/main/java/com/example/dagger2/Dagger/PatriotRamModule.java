@@ -19,7 +19,12 @@ public class PatriotRamModule {
     }
 
     @Provides
-    RAM bindRam(){
-        return new PatriotRam(price);
+    int providePrice(){
+        return price;
+    }
+
+    @Provides
+    RAM provideRam(PatriotRam patriotRam){
+        return patriotRam;
     }
 }

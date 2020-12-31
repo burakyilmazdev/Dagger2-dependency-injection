@@ -10,6 +10,7 @@ public class PatriotRam implements RAM {
     private static final String TAG = "PatriotRam";
     private int price;
 
+    @Inject
     public PatriotRam(int price) {
         this.price = price;
     }

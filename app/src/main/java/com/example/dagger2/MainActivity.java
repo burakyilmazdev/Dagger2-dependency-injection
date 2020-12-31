@@ -21,7 +21,8 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         ComputerComponent computerComponent = DaggerComputerComponent.builder()
-                .patriotRamModule(new PatriotRamModule(500))
+                .price(150)
+                .year(2010)
                 .build();
 
         computerComponent.inject(this);

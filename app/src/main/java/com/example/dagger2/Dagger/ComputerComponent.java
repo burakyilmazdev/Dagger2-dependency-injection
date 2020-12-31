@@ -2,12 +2,29 @@ package com.example.dagger2.Dagger;
 
 import com.example.dagger2.MainActivity;
 
+import javax.inject.Named;
+
+import dagger.BindsInstance;
 import dagger.Component;
 
-@Component(modules = {ProcessorModule.class,PatriotRamModule.class})
+@Component(modules = {ProcessorModule.class,KingstonRamModule.class})
 public interface ComputerComponent {
 
     //Computer getComputer();
 
     void inject(MainActivity mainActivity);
+
+
+    @Component.Builder
+    interface Builder{
+
+        @BindsInstance
+        Builder price(@Named("price") int price);
+
+        @BindsInstance
+        Builder year(@Named("year") int year);
+
+        ComputerComponent build();
+
+    }
 }
