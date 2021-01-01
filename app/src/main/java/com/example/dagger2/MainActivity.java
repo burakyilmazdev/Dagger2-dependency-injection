@@ -14,7 +14,7 @@ import javax.inject.Inject;
 public class MainActivity extends AppCompatActivity {
 
     @Inject
-    Computer computer;
+    Computer computer,computer2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,6 +27,7 @@ public class MainActivity extends AppCompatActivity {
 
         computerComponent.inject(this);
         computer.work();
+        computer2.work();
 
     }
 }
