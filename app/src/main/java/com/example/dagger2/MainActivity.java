@@ -20,10 +20,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        ComputerComponent computerComponent = DaggerComputerComponent.builder()
-                .price(150)
-                .year(2010)
-                .build();
+        ComputerComponent computerComponent = ((Example)getApplication()).getComputerComponent();
 
         computerComponent.inject(this);
         computer.work();
